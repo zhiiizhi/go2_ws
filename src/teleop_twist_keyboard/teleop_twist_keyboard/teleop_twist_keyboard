@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+# Copyright 2011 Brown University Robotics.
+# Copyright 2017 Open Source Robotics Foundation, Inc.
+# All rights reserved.
+#
+# Software License Agreement (BSD License 2.0)
+
+import sys
+import os
+
+# 添加包路径
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'local', 'lib', 'python3.10', 'dist-packages'))
+
+from teleop_twist_keyboard.teleop_twist_keyboard import main
+
+if __name__ == '__main__':
+    main()
