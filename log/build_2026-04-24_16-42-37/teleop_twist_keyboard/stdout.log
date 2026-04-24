@@ -1,0 +1,37 @@
+Built target ament_cmake_python_copy_teleop_twist_keyboard
+running egg_info
+writing teleop_twist_keyboard.egg-info/PKG-INFO
+writing dependency_links to teleop_twist_keyboard.egg-info/dependency_links.txt
+writing top-level names to teleop_twist_keyboard.egg-info/top_level.txt
+reading manifest file 'teleop_twist_keyboard.egg-info/SOURCES.txt'
+writing manifest file 'teleop_twist_keyboard.egg-info/SOURCES.txt'
+Built target ament_cmake_python_build_teleop_twist_keyboard_egg
+-- Install configuration: ""
+-- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/teleop_twist_keyboard/environment/pythonpath.sh
+-- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/teleop_twist_keyboard/environment/pythonpath.dsv
+-- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/local/lib/python3.10/dist-packages/teleop_twist_keyboard-2.4.1-py3.10.egg-info
+-- Installing: /home/cxz/go2_ws/install/teleop_twist_keyboard/local/lib/python3.10/dist-packages/teleop_twist_keyboard-2.4.1-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/cxz/go2_ws/install/teleop_twist_keyboard/local/lib/python3.10/dist-packages/teleop_twist_keyboard-2.4.1-py3.10.egg-info/PKG-INFO
+-- Installing: /home/cxz/go2_ws/install/teleop_twist_keyboard/local/lib/python3.10/dist-packages/teleop_twist_keyboard-2.4.1-py3.10.egg-info/dependency_links.txt
+-- Installing: /home/cxz/go2_ws/install/teleop_twist_keyboard/local/lib/python3.10/dist-packages/teleop_twist_keyboard-2.4.1-py3.10.egg-info/top_level.txt
+-- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/local/lib/python3.10/dist-packages/teleop_twist_keyboard
+-- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/local/lib/python3.10/dist-packages/teleop_twist_keyboard/teleop_twist_keyboard
+-- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/local/lib/python3.10/dist-packages/teleop_twist_keyboard/teleop_twist_keyboard.py
+-- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/local/lib/python3.10/dist-packages/teleop_twist_keyboard/__init__.py
+Listing '/home/cxz/go2_ws/install/teleop_twist_keyboard/local/lib/python3.10/dist-packages/teleop_twist_keyboard'...
+-- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/lib/teleop_twist_keyboard/teleop_twist_keyboard
+-- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/ament_index/resource_index/package_run_dependencies/teleop_twist_keyboard
+-- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/ament_index/resource_index/parent_prefix_path/teleop_twist_keyboard
+-- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/teleop_twist_keyboard/environment/ament_prefix_path.sh
+-- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/teleop_twist_keyboard/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/teleop_twist_keyboard/environment/path.sh
+-- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/teleop_twist_keyboard/environment/path.dsv
+-- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/teleop_twist_keyboard/local_setup.bash
+-- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/teleop_twist_keyboard/local_setup.sh
+-- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/teleop_twist_keyboard/local_setup.zsh
+-- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/teleop_twist_keyboard/local_setup.dsv
+-- Installing: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/teleop_twist_keyboard/package.dsv
+-- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/ament_index/resource_index/packages/teleop_twist_keyboard
+-- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/teleop_twist_keyboard/cmake/teleop_twist_keyboardConfig.cmake
+-- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/teleop_twist_keyboard/cmake/teleop_twist_keyboardConfig-version.cmake
+-- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/teleop_twist_keyboard/package.xml

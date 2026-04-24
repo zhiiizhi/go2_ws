@@ -1,0 +1,6 @@
+Invoking command in '/home/cxz/go2_ws/build/champ': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/cxz/go2_ws/src/unitree-go2-ros2/champ/champ -DCMAKE_INSTALL_PREFIX=/home/cxz/go2_ws/install/champ
+Invoked command in '/home/cxz/go2_ws/build/champ' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/cxz/go2_ws/src/unitree-go2-ros2/champ/champ -DCMAKE_INSTALL_PREFIX=/home/cxz/go2_ws/install/champ
+Invoking command in '/home/cxz/go2_ws/build/champ': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/cxz/go2_ws/build/champ -- -j32 -l32
+Invoked command in '/home/cxz/go2_ws/build/champ' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/cxz/go2_ws/build/champ -- -j32 -l32
+Invoking command in '/home/cxz/go2_ws/build/champ': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/cxz/go2_ws/build/champ
+Invoked command in '/home/cxz/go2_ws/build/champ' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/cxz/go2_ws/build/champ

@@ -1,0 +1,42 @@
+[0.022s] Invoking command in '/home/cxz/go2_ws/build/champ_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/cxz/go2_ws/src/unitree-go2-ros2/champ_teleop -DCMAKE_INSTALL_PREFIX=/home/cxz/go2_ws/install/champ_teleop
+[0.062s] -- The C compiler identification is GNU 11.4.0
+[0.109s] -- The CXX compiler identification is GNU 11.4.0
+[0.114s] -- Detecting C compiler ABI info
+[0.156s] -- Detecting C compiler ABI info - done
+[0.161s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.161s] -- Detecting C compile features
+[0.161s] -- Detecting C compile features - done
+[0.163s] -- Detecting CXX compiler ABI info
+[0.213s] -- Detecting CXX compiler ABI info - done
+[0.218s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.218s] -- Detecting CXX compile features
+[0.218s] -- Detecting CXX compile features - done
+[0.220s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.325s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.445s] -- Configuring done
+[0.445s] -- Generating done
+[0.446s] -- Build files have been written to: /home/cxz/go2_ws/build/champ_teleop
+[0.447s] Invoked command in '/home/cxz/go2_ws/build/champ_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/cxz/go2_ws/src/unitree-go2-ros2/champ_teleop -DCMAKE_INSTALL_PREFIX=/home/cxz/go2_ws/install/champ_teleop
+[0.449s] Invoking command in '/home/cxz/go2_ws/build/champ_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/cxz/go2_ws/build/champ_teleop -- -j32 -l32
+[0.483s] Invoked command in '/home/cxz/go2_ws/build/champ_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/cxz/go2_ws/build/champ_teleop -- -j32 -l32
+[0.484s] Invoking command in '/home/cxz/go2_ws/build/champ_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/cxz/go2_ws/build/champ_teleop
+[0.497s] -- Install configuration: ""
+[0.497s] -- Installing: /home/cxz/go2_ws/install/champ_teleop/share/champ_teleop/launch
+[0.497s] -- Installing: /home/cxz/go2_ws/install/champ_teleop/share/champ_teleop/launch/teleop.launch.py
+[0.497s] -- Installing: /home/cxz/go2_ws/install/champ_teleop/lib/champ_teleop/champ_teleop.py
+[0.497s] -- Installing: /home/cxz/go2_ws/install/champ_teleop/share/ament_index/resource_index/package_run_dependencies/champ_teleop
+[0.497s] -- Installing: /home/cxz/go2_ws/install/champ_teleop/share/ament_index/resource_index/parent_prefix_path/champ_teleop
+[0.497s] -- Installing: /home/cxz/go2_ws/install/champ_teleop/share/champ_teleop/environment/ament_prefix_path.sh
+[0.497s] -- Installing: /home/cxz/go2_ws/install/champ_teleop/share/champ_teleop/environment/ament_prefix_path.dsv
+[0.497s] -- Installing: /home/cxz/go2_ws/install/champ_teleop/share/champ_teleop/environment/path.sh
+[0.497s] -- Installing: /home/cxz/go2_ws/install/champ_teleop/share/champ_teleop/environment/path.dsv
+[0.497s] -- Installing: /home/cxz/go2_ws/install/champ_teleop/share/champ_teleop/local_setup.bash
+[0.497s] -- Installing: /home/cxz/go2_ws/install/champ_teleop/share/champ_teleop/local_setup.sh
+[0.497s] -- Installing: /home/cxz/go2_ws/install/champ_teleop/share/champ_teleop/local_setup.zsh
+[0.497s] -- Installing: /home/cxz/go2_ws/install/champ_teleop/share/champ_teleop/local_setup.dsv
+[0.497s] -- Installing: /home/cxz/go2_ws/install/champ_teleop/share/champ_teleop/package.dsv
+[0.498s] -- Installing: /home/cxz/go2_ws/install/champ_teleop/share/ament_index/resource_index/packages/champ_teleop
+[0.498s] -- Installing: /home/cxz/go2_ws/install/champ_teleop/share/champ_teleop/cmake/champ_teleopConfig.cmake
+[0.498s] -- Installing: /home/cxz/go2_ws/install/champ_teleop/share/champ_teleop/cmake/champ_teleopConfig-version.cmake
+[0.498s] -- Installing: /home/cxz/go2_ws/install/champ_teleop/share/champ_teleop/package.xml
+[0.518s] Invoked command in '/home/cxz/go2_ws/build/champ_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/cxz/go2_ws/build/champ_teleop

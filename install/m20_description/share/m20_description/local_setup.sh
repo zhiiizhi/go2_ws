@@ -1,0 +1,1 @@
+/home/cxz/go2_ws/build/m20_description/ament_cmake_environment_hooks/local_setup.sh

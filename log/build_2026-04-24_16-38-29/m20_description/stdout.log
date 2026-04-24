@@ -1,0 +1,50 @@
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/cxz/go2_ws/build/m20_description
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/config/ros_control/ros_control.yaml
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/launch/description.launch.py
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/base_link.STL
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/fl_hipx.STL
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/fl_hipy.STL
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/fl_knee.STL
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/fl_wheel.STL
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/fr_hipx.STL
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/fr_hipy.STL
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/fr_knee.STL
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/fr_wheel.STL
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/hl_hipx.STL
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/hl_hipy.STL
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/hl_knee.STL
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/hl_wheel.STL
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/hr_hipx.STL
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/hr_hipy.STL
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/hr_knee.STL
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/hr_wheel.STL
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/urdf/m20_description copy 2.urdf
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/urdf/m20_description copy 3.urdf
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/urdf/m20_description copy 4.urdf
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/urdf/m20_description copy.urdf
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/urdf/m20_description.urdf
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/urdf/m20_description><.urdf
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/urdf/m20_description_><.urdf
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/urdf/m20_description_>>.urdf
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/ament_index/resource_index/package_run_dependencies/m20_description
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/ament_index/resource_index/parent_prefix_path/m20_description
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/environment/ament_prefix_path.sh
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/environment/ament_prefix_path.dsv
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/environment/path.sh
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/environment/path.dsv
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/local_setup.bash
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/local_setup.sh
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/local_setup.zsh
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/local_setup.dsv
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/package.dsv
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/ament_index/resource_index/packages/m20_description
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/cmake/m20_descriptionConfig.cmake
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/cmake/m20_descriptionConfig-version.cmake
+-- Symlinking: /home/cxz/go2_ws/install/m20_description/share/m20_description/package.xml

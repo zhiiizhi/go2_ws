@@ -1,0 +1,41 @@
+[0.030s] Invoking command in '/home/cxz/go2_ws/build/teleop_twist_keyboard': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/cxz/go2_ws/build/teleop_twist_keyboard -- -j32 -l32
+[0.100s] Built target ament_cmake_python_copy_teleop_twist_keyboard
+[0.237s] running egg_info
+[0.237s] writing teleop_twist_keyboard.egg-info/PKG-INFO
+[0.237s] writing dependency_links to teleop_twist_keyboard.egg-info/dependency_links.txt
+[0.237s] writing top-level names to teleop_twist_keyboard.egg-info/top_level.txt
+[0.239s] reading manifest file 'teleop_twist_keyboard.egg-info/SOURCES.txt'
+[0.239s] writing manifest file 'teleop_twist_keyboard.egg-info/SOURCES.txt'
+[0.257s] Built target ament_cmake_python_build_teleop_twist_keyboard_egg
+[0.262s] Invoked command in '/home/cxz/go2_ws/build/teleop_twist_keyboard' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/cxz/go2_ws/build/teleop_twist_keyboard -- -j32 -l32
+[0.263s] Invoking command in '/home/cxz/go2_ws/build/teleop_twist_keyboard': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/cxz/go2_ws/build/teleop_twist_keyboard
+[0.268s] -- Install configuration: ""
+[0.268s] -- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/teleop_twist_keyboard/environment/pythonpath.sh
+[0.268s] -- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/teleop_twist_keyboard/environment/pythonpath.dsv
+[0.268s] -- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/local/lib/python3.10/dist-packages/teleop_twist_keyboard-2.4.1-py3.10.egg-info
+[0.268s] -- Installing: /home/cxz/go2_ws/install/teleop_twist_keyboard/local/lib/python3.10/dist-packages/teleop_twist_keyboard-2.4.1-py3.10.egg-info/SOURCES.txt
+[0.268s] -- Installing: /home/cxz/go2_ws/install/teleop_twist_keyboard/local/lib/python3.10/dist-packages/teleop_twist_keyboard-2.4.1-py3.10.egg-info/PKG-INFO
+[0.268s] -- Installing: /home/cxz/go2_ws/install/teleop_twist_keyboard/local/lib/python3.10/dist-packages/teleop_twist_keyboard-2.4.1-py3.10.egg-info/dependency_links.txt
+[0.268s] -- Installing: /home/cxz/go2_ws/install/teleop_twist_keyboard/local/lib/python3.10/dist-packages/teleop_twist_keyboard-2.4.1-py3.10.egg-info/top_level.txt
+[0.268s] -- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/local/lib/python3.10/dist-packages/teleop_twist_keyboard
+[0.268s] -- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/local/lib/python3.10/dist-packages/teleop_twist_keyboard/teleop_twist_keyboard
+[0.268s] -- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/local/lib/python3.10/dist-packages/teleop_twist_keyboard/teleop_twist_keyboard.py
+[0.268s] -- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/local/lib/python3.10/dist-packages/teleop_twist_keyboard/__init__.py
+[0.290s] Listing '/home/cxz/go2_ws/install/teleop_twist_keyboard/local/lib/python3.10/dist-packages/teleop_twist_keyboard'...
+[0.292s] -- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/lib/teleop_twist_keyboard/teleop_twist_keyboard
+[0.292s] -- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/ament_index/resource_index/package_run_dependencies/teleop_twist_keyboard
+[0.292s] -- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/ament_index/resource_index/parent_prefix_path/teleop_twist_keyboard
+[0.292s] -- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/teleop_twist_keyboard/environment/ament_prefix_path.sh
+[0.292s] -- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/teleop_twist_keyboard/environment/ament_prefix_path.dsv
+[0.292s] -- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/teleop_twist_keyboard/environment/path.sh
+[0.292s] -- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/teleop_twist_keyboard/environment/path.dsv
+[0.292s] -- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/teleop_twist_keyboard/local_setup.bash
+[0.292s] -- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/teleop_twist_keyboard/local_setup.sh
+[0.292s] -- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/teleop_twist_keyboard/local_setup.zsh
+[0.292s] -- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/teleop_twist_keyboard/local_setup.dsv
+[0.292s] -- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/teleop_twist_keyboard/package.dsv
+[0.293s] -- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/ament_index/resource_index/packages/teleop_twist_keyboard
+[0.293s] -- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/teleop_twist_keyboard/cmake/teleop_twist_keyboardConfig.cmake
+[0.293s] -- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/teleop_twist_keyboard/cmake/teleop_twist_keyboardConfig-version.cmake
+[0.293s] -- Up-to-date: /home/cxz/go2_ws/install/teleop_twist_keyboard/share/teleop_twist_keyboard/package.xml
+[0.301s] Invoked command in '/home/cxz/go2_ws/build/teleop_twist_keyboard' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/cxz/go2_ws/build/teleop_twist_keyboard

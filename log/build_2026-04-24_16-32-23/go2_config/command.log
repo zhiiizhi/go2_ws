@@ -1,0 +1,6 @@
+Invoking command in '/home/cxz/go2_ws/build/go2_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/cxz/go2_ws/src/unitree-go2-ros2/robots/configs/go2_config -DCMAKE_INSTALL_PREFIX=/home/cxz/go2_ws/install/go2_config
+Invoked command in '/home/cxz/go2_ws/build/go2_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/cxz/go2_ws/src/unitree-go2-ros2/robots/configs/go2_config -DCMAKE_INSTALL_PREFIX=/home/cxz/go2_ws/install/go2_config
+Invoking command in '/home/cxz/go2_ws/build/go2_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/cxz/go2_ws/build/go2_config -- -j32 -l32
+Invoked command in '/home/cxz/go2_ws/build/go2_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/cxz/go2_ws/build/go2_config -- -j32 -l32
+Invoking command in '/home/cxz/go2_ws/build/go2_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/cxz/go2_ws/build/go2_config
+Invoked command in '/home/cxz/go2_ws/build/go2_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/cxz/go2_ws/build/go2_config

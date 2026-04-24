@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypen="xml"?>
+<package format="3">
+  <name>teleop_twist_keyboard</name>
+  <version>2.4.1</version>
+  <description>Teleop_twist_keyboard is a simple way to send velocity commands to a robot through a keyboard.</description>
+
+  <maintainer email="jbo@jhu.edu">jbohren</maintainer>
+  <license>BSD</license>
+
+  <url type="website">http://wiki.ros.org/teleop_twist_keyboard</url>
+  <url type="repository">https://github.com/ros-teleop/teleop_twist_keyboard</url>
+  <url type="bugtracker">https://github.com/ros-teleop/teleop_twist_keyboard/issues</url>
+  <author>Graylin Trevor</author>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+  <depend>rclpy</depend>
+  <depend>geometry_msgs</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

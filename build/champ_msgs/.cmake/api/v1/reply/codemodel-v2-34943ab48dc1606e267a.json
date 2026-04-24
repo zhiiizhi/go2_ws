@@ -1,0 +1,258 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-adcb1fe19e0181a93695.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "champ_msgs__py",
+					"jsonFile" : "directory-champ_msgs__py-66c03f9524b9bcbae450.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/cxz/go2_ws/build/champ_msgs/champ_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "champ_msgs__rs",
+					"jsonFile" : "directory-champ_msgs__rs-fdf182763b6d93b37fd4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/cxz/go2_ws/build/champ_msgs/champ_msgs__rs",
+					"targetIndexes" : 
+					[
+						16
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "champ_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_champ_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_champ_msgs_egg-56a79275772896055d5d.json",
+					"name" : "ament_cmake_python_build_champ_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_champ_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_champ_msgs-a7687e2a404bc23bca5f.json",
+					"name" : "ament_cmake_python_copy_champ_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "champ_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-champ_msgs-51ab716838a06707cea0.json",
+					"name" : "champ_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "champ_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-champ_msgs__cpp-0cb4a57aeed6e063bd00.json",
+					"name" : "champ_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "champ_msgs__py::@0720fd0a0a77cc28b733",
+					"jsonFile" : "target-champ_msgs__py-2a645591a6661f0dfae0.json",
+					"name" : "champ_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "champ_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-champ_msgs__rosidl_generator_c-cf92b3e42a591a6c497e.json",
+					"name" : "champ_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "champ_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-champ_msgs__rosidl_generator_py-629da71441d568f08299.json",
+					"name" : "champ_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "champ_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-champ_msgs__rosidl_typesupport_c-214aadcff50dc015266a.json",
+					"name" : "champ_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "champ_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-champ_msgs__rosidl_typesupport_c__pyext-4f92f14caf1c29cebd03.json",
+					"name" : "champ_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "champ_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-champ_msgs__rosidl_typesupport_cpp-8b8e39dbace7ac5b3a73.json",
+					"name" : "champ_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "champ_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-champ_msgs__rosidl_typesupport_fastrtps_c-f2380241067cf585ca3b.json",
+					"name" : "champ_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "champ_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-champ_msgs__rosidl_typesupport_fastrtps_c__pyext-408991dd3ed6f54ad3e9.json",
+					"name" : "champ_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "champ_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-champ_msgs__rosidl_typesupport_fastrtps_cpp-0384862f41d0bbe885ab.json",
+					"name" : "champ_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "champ_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-champ_msgs__rosidl_typesupport_introspection_c-86b70671f8b3c20c763e.json",
+					"name" : "champ_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "champ_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-champ_msgs__rosidl_typesupport_introspection_c__pyext-50af28c64c98b1121d04.json",
+					"name" : "champ_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "champ_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-champ_msgs__rosidl_typesupport_introspection_cpp-bac2ea08eeddc1a0dde0.json",
+					"name" : "champ_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "champ_msgs__rs::@6f3780454e386aa153c7",
+					"jsonFile" : "target-champ_msgs__rs-f5c508c7e505ede3a88f.json",
+					"name" : "champ_msgs__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "champ_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-champ_msgs_uninstall-948531248b49a23cc518.json",
+					"name" : "champ_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-c2829462a2ca1f5a5b76.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/cxz/go2_ws/build/champ_msgs",
+		"source" : "/home/cxz/go2_ws/src/unitree-go2-ros2/champ/champ_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

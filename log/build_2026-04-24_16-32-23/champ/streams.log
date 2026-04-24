@@ -1,0 +1,86 @@
+[0.029s] Invoking command in '/home/cxz/go2_ws/build/champ': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/cxz/go2_ws/src/unitree-go2-ros2/champ/champ -DCMAKE_INSTALL_PREFIX=/home/cxz/go2_ws/install/champ
+[0.074s] -- The C compiler identification is GNU 11.4.0
+[0.125s] -- The CXX compiler identification is GNU 11.4.0
+[0.130s] -- Detecting C compiler ABI info
+[0.180s] -- Detecting C compiler ABI info - done
+[0.187s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.187s] -- Detecting C compile features
+[0.187s] -- Detecting C compile features - done
+[0.189s] -- Detecting CXX compiler ABI info
+[0.246s] -- Detecting CXX compiler ABI info - done
+[0.252s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.252s] -- Detecting CXX compile features
+[0.252s] -- Detecting CXX compile features - done
+[0.255s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.373s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.440s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.479s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.484s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.491s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.509s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.520s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.557s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.559s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.621s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.641s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.673s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.681s] -- Looking for pthread.h
+[0.729s] -- Looking for pthread.h - found
+[0.729s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.783s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.783s] -- Found Threads: TRUE  
+[0.822s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.864s] -- Configuring done
+[0.866s] -- Generating done
+[0.867s] -- Build files have been written to: /home/cxz/go2_ws/build/champ
+[0.872s] Invoked command in '/home/cxz/go2_ws/build/champ' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/cxz/go2_ws/src/unitree-go2-ros2/champ/champ -DCMAKE_INSTALL_PREFIX=/home/cxz/go2_ws/install/champ
+[0.873s] Invoking command in '/home/cxz/go2_ws/build/champ': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/cxz/go2_ws/build/champ -- -j32 -l32
+[0.904s] Invoked command in '/home/cxz/go2_ws/build/champ' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/cxz/go2_ws/build/champ -- -j32 -l32
+[0.904s] Invoking command in '/home/cxz/go2_ws/build/champ': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/cxz/go2_ws/build/champ
+[0.909s] -- Install configuration: ""
+[0.909s] -- Installing: /home/cxz/go2_ws/install/champ/include
+[0.909s] -- Installing: /home/cxz/go2_ws/install/champ/include/champ
+[0.909s] -- Installing: /home/cxz/go2_ws/install/champ/include/champ/bla
+[0.909s] -- Installing: /home/cxz/go2_ws/install/champ/include/champ/bla/memory_delegate.h
+[0.909s] -- Installing: /home/cxz/go2_ws/install/champ/include/champ/bla/basic_linear_algebra.h
+[0.909s] -- Installing: /home/cxz/go2_ws/install/champ/include/champ/utils
+[0.909s] -- Installing: /home/cxz/go2_ws/install/champ/include/champ/utils/xmlrpc_helpers.h
+[0.909s] -- Installing: /home/cxz/go2_ws/install/champ/include/champ/utils/urdf_loader.h
+[0.909s] -- Installing: /home/cxz/go2_ws/install/champ/include/champ/quadruped_base
+[0.909s] -- Installing: /home/cxz/go2_ws/install/champ/include/champ/quadruped_base/quadruped_base.h
+[0.909s] -- Installing: /home/cxz/go2_ws/install/champ/include/champ/quadruped_base/quadruped_leg.h
+[0.909s] -- Installing: /home/cxz/go2_ws/install/champ/include/champ/quadruped_base/quadruped_joint.h
+[0.909s] -- Installing: /home/cxz/go2_ws/install/champ/include/champ/quadruped_base/quadruped_components.h
+[0.909s] -- Installing: /home/cxz/go2_ws/install/champ/include/champ/body_controller
+[0.909s] -- Installing: /home/cxz/go2_ws/install/champ/include/champ/body_controller/body_controller.h
+[0.909s] -- Installing: /home/cxz/go2_ws/install/champ/include/champ/LICENSE
+[0.909s] -- Installing: /home/cxz/go2_ws/install/champ/include/champ/odometry
+[0.909s] -- Installing: /home/cxz/go2_ws/install/champ/include/champ/odometry/odometry.h
+[0.909s] -- Installing: /home/cxz/go2_ws/install/champ/include/champ/README.md
+[0.909s] -- Installing: /home/cxz/go2_ws/install/champ/include/champ/macros
+[0.909s] -- Installing: /home/cxz/go2_ws/install/champ/include/champ/macros/macros.h
+[0.909s] -- Installing: /home/cxz/go2_ws/install/champ/include/champ/kinematics
+[0.909s] -- Installing: /home/cxz/go2_ws/install/champ/include/champ/kinematics/kinematics.h
+[0.910s] -- Installing: /home/cxz/go2_ws/install/champ/include/champ/geometry
+[0.910s] -- Installing: /home/cxz/go2_ws/install/champ/include/champ/geometry/geometry.h
+[0.910s] -- Installing: /home/cxz/go2_ws/install/champ/include/champ/leg_controller
+[0.910s] -- Installing: /home/cxz/go2_ws/install/champ/include/champ/leg_controller/leg_controller.h
+[0.910s] -- Installing: /home/cxz/go2_ws/install/champ/include/champ/leg_controller/trajectory_planner.h
+[0.910s] -- Installing: /home/cxz/go2_ws/install/champ/include/champ/leg_controller/phase_generator.h
+[0.910s] -- Installing: /home/cxz/go2_ws/install/champ/share/ament_index/resource_index/package_run_dependencies/champ
+[0.910s] -- Installing: /home/cxz/go2_ws/install/champ/share/ament_index/resource_index/parent_prefix_path/champ
+[0.910s] -- Installing: /home/cxz/go2_ws/install/champ/share/champ/environment/ament_prefix_path.sh
+[0.910s] -- Installing: /home/cxz/go2_ws/install/champ/share/champ/environment/ament_prefix_path.dsv
+[0.910s] -- Installing: /home/cxz/go2_ws/install/champ/share/champ/environment/path.sh
+[0.910s] -- Installing: /home/cxz/go2_ws/install/champ/share/champ/environment/path.dsv
+[0.911s] -- Installing: /home/cxz/go2_ws/install/champ/share/champ/local_setup.bash
+[0.911s] -- Installing: /home/cxz/go2_ws/install/champ/share/champ/local_setup.sh
+[0.911s] -- Installing: /home/cxz/go2_ws/install/champ/share/champ/local_setup.zsh
+[0.911s] -- Installing: /home/cxz/go2_ws/install/champ/share/champ/local_setup.dsv
+[0.911s] -- Installing: /home/cxz/go2_ws/install/champ/share/champ/package.dsv
+[0.911s] -- Installing: /home/cxz/go2_ws/install/champ/share/ament_index/resource_index/packages/champ
+[0.911s] -- Installing: /home/cxz/go2_ws/install/champ/share/champ/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.911s] -- Installing: /home/cxz/go2_ws/install/champ/share/champ/cmake/champConfig.cmake
+[0.911s] -- Installing: /home/cxz/go2_ws/install/champ/share/champ/cmake/champConfig-version.cmake
+[0.911s] -- Installing: /home/cxz/go2_ws/install/champ/share/champ/package.xml
+[0.912s] Invoked command in '/home/cxz/go2_ws/build/champ' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/cxz/go2_ws/build/champ

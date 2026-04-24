@@ -1,0 +1,1 @@
+/home/cxz/go2_ws/build/m20_config/ament_cmake_core/m20_configConfig-version.cmake

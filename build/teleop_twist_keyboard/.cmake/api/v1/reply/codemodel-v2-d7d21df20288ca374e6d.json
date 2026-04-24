@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-edba6a6b81ff0d804575.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "teleop_twist_keyboard",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_teleop_twist_keyboard_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_teleop_twist_keyboard_egg-6a62fb97c8d949dd19b4.json",
+					"name" : "ament_cmake_python_build_teleop_twist_keyboard_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_teleop_twist_keyboard::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_teleop_twist_keyboard-ac5c9a03e5594eaace7e.json",
+					"name" : "ament_cmake_python_copy_teleop_twist_keyboard",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "teleop_twist_keyboard_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-teleop_twist_keyboard_uninstall-a5eeeb8f16b5728b746a.json",
+					"name" : "teleop_twist_keyboard_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-f0abdf7e44a50b40c51b.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/cxz/go2_ws/build/teleop_twist_keyboard",
+		"source" : "/home/cxz/go2_ws/src/teleop_twist_keyboard"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

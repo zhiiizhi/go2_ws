@@ -1,0 +1,42 @@
+/home/cxz/go2_ws/install/m20_description/share/m20_description/config/ros_control/ros_control.yaml
+/home/cxz/go2_ws/install/m20_description/share/m20_description/launch/description.launch.py
+/home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/base_link.STL
+/home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/fl_hipx.STL
+/home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/fl_hipy.STL
+/home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/fl_knee.STL
+/home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/fl_wheel.STL
+/home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/fr_hipx.STL
+/home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/fr_hipy.STL
+/home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/fr_knee.STL
+/home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/fr_wheel.STL
+/home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/hl_hipx.STL
+/home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/hl_hipy.STL
+/home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/hl_knee.STL
+/home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/hl_wheel.STL
+/home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/hr_hipx.STL
+/home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/hr_hipy.STL
+/home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/hr_knee.STL
+/home/cxz/go2_ws/install/m20_description/share/m20_description/meshes/hr_wheel.STL
+/home/cxz/go2_ws/install/m20_description/share/m20_description/urdf/m20_description copy 2.urdf
+/home/cxz/go2_ws/install/m20_description/share/m20_description/urdf/m20_description copy 3.urdf
+/home/cxz/go2_ws/install/m20_description/share/m20_description/urdf/m20_description copy 4.urdf
+/home/cxz/go2_ws/install/m20_description/share/m20_description/urdf/m20_description copy.urdf
+/home/cxz/go2_ws/install/m20_description/share/m20_description/urdf/m20_description.urdf
+/home/cxz/go2_ws/install/m20_description/share/m20_description/urdf/m20_description><.urdf
+/home/cxz/go2_ws/install/m20_description/share/m20_description/urdf/m20_description_><.urdf
+/home/cxz/go2_ws/install/m20_description/share/m20_description/urdf/m20_description_>>.urdf
+/home/cxz/go2_ws/install/m20_description/share/ament_index/resource_index/package_run_dependencies/m20_description
+/home/cxz/go2_ws/install/m20_description/share/ament_index/resource_index/parent_prefix_path/m20_description
+/home/cxz/go2_ws/install/m20_description/share/m20_description/environment/ament_prefix_path.sh
+/home/cxz/go2_ws/install/m20_description/share/m20_description/environment/ament_prefix_path.dsv
+/home/cxz/go2_ws/install/m20_description/share/m20_description/environment/path.sh
+/home/cxz/go2_ws/install/m20_description/share/m20_description/environment/path.dsv
+/home/cxz/go2_ws/install/m20_description/share/m20_description/local_setup.bash
+/home/cxz/go2_ws/install/m20_description/share/m20_description/local_setup.sh
+/home/cxz/go2_ws/install/m20_description/share/m20_description/local_setup.zsh
+/home/cxz/go2_ws/install/m20_description/share/m20_description/local_setup.dsv
+/home/cxz/go2_ws/install/m20_description/share/m20_description/package.dsv
+/home/cxz/go2_ws/install/m20_description/share/ament_index/resource_index/packages/m20_description
+/home/cxz/go2_ws/install/m20_description/share/m20_description/cmake/m20_descriptionConfig.cmake
+/home/cxz/go2_ws/install/m20_description/share/m20_description/cmake/m20_descriptionConfig-version.cmake
+/home/cxz/go2_ws/install/m20_description/share/m20_description/package.xml

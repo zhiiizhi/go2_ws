@@ -1,0 +1,107 @@
+[0.008s] Invoking command in '/home/cxz/go2_ws/build/champ_base': CMAKE_PREFIX_PATH=/home/cxz/go2_ws/install/champ_msgs:/home/cxz/go2_ws/install/champ:/home/cxz/go2_ws/install/teleop_twist_keyboard:/home/cxz/go2_ws/install/go2_description:/home/cxz/go2_ws/install/go2_config:/home/cxz/go2_ws/install/champ_teleop:/home/cxz/go2_ws/install/champ_navigation:/home/cxz/go2_ws/install/champ_bringup:/home/cxz/go2_ws/install/champ_base:/home/cxz/go2_ws/install/champ_description:/home/cxz/go2_ws/install/champ_config:/home/cxz/go2_ws/install/champ_gazebo:/home/cxz/go2_ws/install/m20_description:/home/cxz/go2_ws/install/m20_config:/home/cxz/champ_ws/install/champ_navigation:/home/cxz/champ_ws/install/champ_gazebo:/home/cxz/champ_ws/install/champ_bringup:/home/cxz/champ_ws/install/champ_base:/home/cxz/champ_ws/install/champ_msgs:/home/cxz/champ_ws/install/champ_description:/home/cxz/champ_ws/install/champ_config:/home/cxz/champ_ws/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/cxz/go2_ws/install/champ_msgs/lib:/home/cxz/go2_ws/install/champ_base/lib:/home/cxz/champ_ws/install/champ_base/lib:/home/cxz/champ_ws/install/champ_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/cxz/go2_ws/src/unitree-go2-ros2/champ/champ_base -DCMAKE_INSTALL_PREFIX=/home/cxz/go2_ws/install/champ_base
+[0.073s] -- The C compiler identification is GNU 11.4.0
+[0.126s] -- The CXX compiler identification is GNU 11.4.0
+[0.131s] -- Detecting C compiler ABI info
+[0.188s] -- Detecting C compiler ABI info - done
+[0.193s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.193s] -- Detecting C compile features
+[0.193s] -- Detecting C compile features - done
+[0.195s] -- Detecting CXX compiler ABI info
+[0.263s] -- Detecting CXX compiler ABI info - done
+[0.268s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.269s] -- Detecting CXX compile features
+[0.269s] -- Detecting CXX compile features - done
+[0.271s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.396s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.465s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.498s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.502s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.508s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.517s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.529s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.562s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.565s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.646s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.666s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.699s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.708s] -- Looking for pthread.h
+[0.789s] -- Looking for pthread.h - found
+[0.789s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.853s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.856s] -- Found Threads: TRUE  
+[0.893s] -- Found rclpy: 3.3.21 (/opt/ros/humble/share/rclpy/cmake)
+[0.893s] -- Found champ_msgs: 0.1.0 (/home/cxz/go2_ws/install/champ_msgs/share/champ_msgs/cmake)
+[0.912s] -- Found visualization_msgs: 4.9.1 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.937s] -- Found trajectory_msgs: 4.9.1 (/opt/ros/humble/share/trajectory_msgs/cmake)
+[0.948s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.959s] -- Found tf2_ros: 0.25.20 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.028s] -- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+[1.046s] -- Found champ: 0.1.0 (/home/cxz/go2_ws/install/champ/share/champ/cmake)
+[1.120s] -- Configuring done
+[1.149s] -- Generating done
+[1.159s] -- Build files have been written to: /home/cxz/go2_ws/build/champ_base
+[1.166s] Invoked command in '/home/cxz/go2_ws/build/champ_base' returned '0': CMAKE_PREFIX_PATH=/home/cxz/go2_ws/install/champ_msgs:/home/cxz/go2_ws/install/champ:/home/cxz/go2_ws/install/teleop_twist_keyboard:/home/cxz/go2_ws/install/go2_description:/home/cxz/go2_ws/install/go2_config:/home/cxz/go2_ws/install/champ_teleop:/home/cxz/go2_ws/install/champ_navigation:/home/cxz/go2_ws/install/champ_bringup:/home/cxz/go2_ws/install/champ_base:/home/cxz/go2_ws/install/champ_description:/home/cxz/go2_ws/install/champ_config:/home/cxz/go2_ws/install/champ_gazebo:/home/cxz/go2_ws/install/m20_description:/home/cxz/go2_ws/install/m20_config:/home/cxz/champ_ws/install/champ_navigation:/home/cxz/champ_ws/install/champ_gazebo:/home/cxz/champ_ws/install/champ_bringup:/home/cxz/champ_ws/install/champ_base:/home/cxz/champ_ws/install/champ_msgs:/home/cxz/champ_ws/install/champ_description:/home/cxz/champ_ws/install/champ_config:/home/cxz/champ_ws/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/cxz/go2_ws/install/champ_msgs/lib:/home/cxz/go2_ws/install/champ_base/lib:/home/cxz/champ_ws/install/champ_base/lib:/home/cxz/champ_ws/install/champ_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/cxz/go2_ws/src/unitree-go2-ros2/champ/champ_base -DCMAKE_INSTALL_PREFIX=/home/cxz/go2_ws/install/champ_base
+[1.167s] Invoking command in '/home/cxz/go2_ws/build/champ_base': CMAKE_PREFIX_PATH=/home/cxz/go2_ws/install/champ_msgs:/home/cxz/go2_ws/install/champ:/home/cxz/go2_ws/install/teleop_twist_keyboard:/home/cxz/go2_ws/install/go2_description:/home/cxz/go2_ws/install/go2_config:/home/cxz/go2_ws/install/champ_teleop:/home/cxz/go2_ws/install/champ_navigation:/home/cxz/go2_ws/install/champ_bringup:/home/cxz/go2_ws/install/champ_base:/home/cxz/go2_ws/install/champ_description:/home/cxz/go2_ws/install/champ_config:/home/cxz/go2_ws/install/champ_gazebo:/home/cxz/go2_ws/install/m20_description:/home/cxz/go2_ws/install/m20_config:/home/cxz/champ_ws/install/champ_navigation:/home/cxz/champ_ws/install/champ_gazebo:/home/cxz/champ_ws/install/champ_bringup:/home/cxz/champ_ws/install/champ_base:/home/cxz/champ_ws/install/champ_msgs:/home/cxz/champ_ws/install/champ_description:/home/cxz/champ_ws/install/champ_config:/home/cxz/champ_ws/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/cxz/go2_ws/install/champ_msgs/lib:/home/cxz/go2_ws/install/champ_base/lib:/home/cxz/champ_ws/install/champ_base/lib:/home/cxz/champ_ws/install/champ_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/cxz/go2_ws/build/champ_base -- -j32 -l32
+[1.203s] [  8%] [32mBuilding CXX object CMakeFiles/quadruped_controller.dir/src/quadruped_controller.cpp.o[0m
+[1.204s] [ 16%] [32mBuilding CXX object CMakeFiles/message_relay.dir/src/message_relay.cpp.o[0m
+[1.204s] [ 25%] [32mBuilding CXX object CMakeFiles/state_estimation.dir/src/state_estimation.cpp.o[0m
+[8.736s] [ 33%] [32m[1mLinking CXX shared library libquadruped_controller.so[0m
+[9.178s] [ 33%] Built target quadruped_controller
+[9.193s] [ 41%] [32mBuilding CXX object CMakeFiles/quadruped_controller_node.dir/src/quadruped_controller_node.cpp.o[0m
+[10.543s] [ 50%] [32m[1mLinking CXX shared library libmessage_relay.so[0m
+[11.107s] [ 58%] [32m[1mLinking CXX executable quadruped_controller_node[0m
+[11.121s] [ 58%] Built target message_relay
+[11.136s] [ 66%] [32mBuilding CXX object CMakeFiles/message_relay_node.dir/src/message_relay_node.cpp.o[0m
+[11.316s] [ 66%] Built target quadruped_controller_node
+[11.915s] [ 75%] [32m[1mLinking CXX shared library libstate_estimation.so[0m
+[12.555s] [ 75%] Built target state_estimation
+[12.570s] [ 83%] [32mBuilding CXX object CMakeFiles/state_estimation_node.dir/src/state_estimation_node.cpp.o[0m
+[13.122s] [ 91%] [32m[1mLinking CXX executable message_relay_node[0m
+[13.364s] [ 91%] Built target message_relay_node
+[16.002s] [100%] [32m[1mLinking CXX executable state_estimation_node[0m
+[16.268s] [100%] Built target state_estimation_node
+[16.276s] Invoked command in '/home/cxz/go2_ws/build/champ_base' returned '0': CMAKE_PREFIX_PATH=/home/cxz/go2_ws/install/champ_msgs:/home/cxz/go2_ws/install/champ:/home/cxz/go2_ws/install/teleop_twist_keyboard:/home/cxz/go2_ws/install/go2_description:/home/cxz/go2_ws/install/go2_config:/home/cxz/go2_ws/install/champ_teleop:/home/cxz/go2_ws/install/champ_navigation:/home/cxz/go2_ws/install/champ_bringup:/home/cxz/go2_ws/install/champ_base:/home/cxz/go2_ws/install/champ_description:/home/cxz/go2_ws/install/champ_config:/home/cxz/go2_ws/install/champ_gazebo:/home/cxz/go2_ws/install/m20_description:/home/cxz/go2_ws/install/m20_config:/home/cxz/champ_ws/install/champ_navigation:/home/cxz/champ_ws/install/champ_gazebo:/home/cxz/champ_ws/install/champ_bringup:/home/cxz/champ_ws/install/champ_base:/home/cxz/champ_ws/install/champ_msgs:/home/cxz/champ_ws/install/champ_description:/home/cxz/champ_ws/install/champ_config:/home/cxz/champ_ws/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/cxz/go2_ws/install/champ_msgs/lib:/home/cxz/go2_ws/install/champ_base/lib:/home/cxz/champ_ws/install/champ_base/lib:/home/cxz/champ_ws/install/champ_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/cxz/go2_ws/build/champ_base -- -j32 -l32
+[16.278s] Invoking command in '/home/cxz/go2_ws/build/champ_base': CMAKE_PREFIX_PATH=/home/cxz/go2_ws/install/champ_msgs:/home/cxz/go2_ws/install/champ:/home/cxz/go2_ws/install/teleop_twist_keyboard:/home/cxz/go2_ws/install/go2_description:/home/cxz/go2_ws/install/go2_config:/home/cxz/go2_ws/install/champ_teleop:/home/cxz/go2_ws/install/champ_navigation:/home/cxz/go2_ws/install/champ_bringup:/home/cxz/go2_ws/install/champ_base:/home/cxz/go2_ws/install/champ_description:/home/cxz/go2_ws/install/champ_config:/home/cxz/go2_ws/install/champ_gazebo:/home/cxz/go2_ws/install/m20_description:/home/cxz/go2_ws/install/m20_config:/home/cxz/champ_ws/install/champ_navigation:/home/cxz/champ_ws/install/champ_gazebo:/home/cxz/champ_ws/install/champ_bringup:/home/cxz/champ_ws/install/champ_base:/home/cxz/champ_ws/install/champ_msgs:/home/cxz/champ_ws/install/champ_description:/home/cxz/champ_ws/install/champ_config:/home/cxz/champ_ws/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/cxz/go2_ws/install/champ_msgs/lib:/home/cxz/go2_ws/install/champ_base/lib:/home/cxz/champ_ws/install/champ_base/lib:/home/cxz/champ_ws/install/champ_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/cxz/go2_ws/build/champ_base
+[16.284s] -- Install configuration: ""
+[16.284s] -- Installing: /home/cxz/go2_ws/install/champ_base/share/champ_base/config
+[16.284s] -- Installing: /home/cxz/go2_ws/install/champ_base/share/champ_base/config/ekf
+[16.284s] -- Installing: /home/cxz/go2_ws/install/champ_base/share/champ_base/config/ekf/base_to_footprint.yaml
+[16.284s] -- Installing: /home/cxz/go2_ws/install/champ_base/share/champ_base/config/ekf/footprint_to_odom.yaml
+[16.284s] -- Installing: /home/cxz/go2_ws/install/champ_base/share/champ_base/config/velocity_smoother
+[16.284s] -- Installing: /home/cxz/go2_ws/install/champ_base/share/champ_base/config/velocity_smoother/velocity_smoother.yaml
+[16.284s] -- Installing: /home/cxz/go2_ws/install/champ_base/lib/libquadruped_controller.so
+[16.291s] -- Set runtime path of "/home/cxz/go2_ws/install/champ_base/lib/libquadruped_controller.so" to ""
+[16.291s] -- Installing: /home/cxz/go2_ws/install/champ_base/bin/quadruped_controller_node
+[16.291s] -- Set runtime path of "/home/cxz/go2_ws/install/champ_base/bin/quadruped_controller_node" to ""
+[16.291s] -- Installing: /home/cxz/go2_ws/install/champ_base/lib/libmessage_relay.so
+[16.300s] -- Set runtime path of "/home/cxz/go2_ws/install/champ_base/lib/libmessage_relay.so" to ""
+[16.300s] -- Installing: /home/cxz/go2_ws/install/champ_base/bin/message_relay_node
+[16.301s] -- Set runtime path of "/home/cxz/go2_ws/install/champ_base/bin/message_relay_node" to ""
+[16.301s] -- Installing: /home/cxz/go2_ws/install/champ_base/lib/libstate_estimation.so
+[16.310s] -- Set runtime path of "/home/cxz/go2_ws/install/champ_base/lib/libstate_estimation.so" to ""
+[16.311s] -- Installing: /home/cxz/go2_ws/install/champ_base/bin/state_estimation_node
+[16.311s] -- Set runtime path of "/home/cxz/go2_ws/install/champ_base/bin/state_estimation_node" to ""
+[16.311s] -- Installing: /home/cxz/go2_ws/install/champ_base/lib/champ_base/quadruped_controller_node
+[16.311s] -- Set runtime path of "/home/cxz/go2_ws/install/champ_base/lib/champ_base/quadruped_controller_node" to ""
+[16.311s] -- Installing: /home/cxz/go2_ws/install/champ_base/lib/champ_base/message_relay_node
+[16.311s] -- Set runtime path of "/home/cxz/go2_ws/install/champ_base/lib/champ_base/message_relay_node" to ""
+[16.311s] -- Installing: /home/cxz/go2_ws/install/champ_base/lib/champ_base/state_estimation_node
+[16.311s] -- Set runtime path of "/home/cxz/go2_ws/install/champ_base/lib/champ_base/state_estimation_node" to ""
+[16.311s] -- Installing: /home/cxz/go2_ws/install/champ_base/share/ament_index/resource_index/package_run_dependencies/champ_base
+[16.312s] -- Installing: /home/cxz/go2_ws/install/champ_base/share/ament_index/resource_index/parent_prefix_path/champ_base
+[16.312s] -- Installing: /home/cxz/go2_ws/install/champ_base/share/champ_base/environment/ament_prefix_path.sh
+[16.312s] -- Installing: /home/cxz/go2_ws/install/champ_base/share/champ_base/environment/ament_prefix_path.dsv
+[16.312s] -- Installing: /home/cxz/go2_ws/install/champ_base/share/champ_base/environment/path.sh
+[16.312s] -- Installing: /home/cxz/go2_ws/install/champ_base/share/champ_base/environment/path.dsv
+[16.312s] -- Installing: /home/cxz/go2_ws/install/champ_base/share/champ_base/local_setup.bash
+[16.312s] -- Installing: /home/cxz/go2_ws/install/champ_base/share/champ_base/local_setup.sh
+[16.312s] -- Installing: /home/cxz/go2_ws/install/champ_base/share/champ_base/local_setup.zsh
+[16.312s] -- Installing: /home/cxz/go2_ws/install/champ_base/share/champ_base/local_setup.dsv
+[16.312s] -- Installing: /home/cxz/go2_ws/install/champ_base/share/champ_base/package.dsv
+[16.312s] -- Installing: /home/cxz/go2_ws/install/champ_base/share/ament_index/resource_index/packages/champ_base
+[16.312s] -- Installing: /home/cxz/go2_ws/install/champ_base/share/champ_base/cmake/ament_cmake_export_include_directories-extras.cmake
+[16.312s] -- Installing: /home/cxz/go2_ws/install/champ_base/share/champ_base/cmake/ament_cmake_export_dependencies-extras.cmake
+[16.312s] -- Installing: /home/cxz/go2_ws/install/champ_base/share/champ_base/cmake/champ_baseConfig.cmake
+[16.312s] -- Installing: /home/cxz/go2_ws/install/champ_base/share/champ_base/cmake/champ_baseConfig-version.cmake
+[16.312s] -- Installing: /home/cxz/go2_ws/install/champ_base/share/champ_base/package.xml
+[16.314s] Invoked command in '/home/cxz/go2_ws/build/champ_base' returned '0': CMAKE_PREFIX_PATH=/home/cxz/go2_ws/install/champ_msgs:/home/cxz/go2_ws/install/champ:/home/cxz/go2_ws/install/teleop_twist_keyboard:/home/cxz/go2_ws/install/go2_description:/home/cxz/go2_ws/install/go2_config:/home/cxz/go2_ws/install/champ_teleop:/home/cxz/go2_ws/install/champ_navigation:/home/cxz/go2_ws/install/champ_bringup:/home/cxz/go2_ws/install/champ_base:/home/cxz/go2_ws/install/champ_description:/home/cxz/go2_ws/install/champ_config:/home/cxz/go2_ws/install/champ_gazebo:/home/cxz/go2_ws/install/m20_description:/home/cxz/go2_ws/install/m20_config:/home/cxz/champ_ws/install/champ_navigation:/home/cxz/champ_ws/install/champ_gazebo:/home/cxz/champ_ws/install/champ_bringup:/home/cxz/champ_ws/install/champ_base:/home/cxz/champ_ws/install/champ_msgs:/home/cxz/champ_ws/install/champ_description:/home/cxz/champ_ws/install/champ_config:/home/cxz/champ_ws/install/champ:/opt/ros/humble LD_LIBRARY_PATH=/home/cxz/go2_ws/install/champ_msgs/lib:/home/cxz/go2_ws/install/champ_base/lib:/home/cxz/champ_ws/install/champ_base/lib:/home/cxz/champ_ws/install/champ_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/cxz/go2_ws/build/champ_base

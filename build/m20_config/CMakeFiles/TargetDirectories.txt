@@ -1,0 +1,9 @@
+/home/cxz/go2_ws/build/m20_config/CMakeFiles/uninstall.dir
+/home/cxz/go2_ws/build/m20_config/CMakeFiles/m20_config_uninstall.dir
+/home/cxz/go2_ws/build/m20_config/CMakeFiles/test.dir
+/home/cxz/go2_ws/build/m20_config/CMakeFiles/edit_cache.dir
+/home/cxz/go2_ws/build/m20_config/CMakeFiles/rebuild_cache.dir
+/home/cxz/go2_ws/build/m20_config/CMakeFiles/list_install_components.dir
+/home/cxz/go2_ws/build/m20_config/CMakeFiles/install.dir
+/home/cxz/go2_ws/build/m20_config/CMakeFiles/install/local.dir
+/home/cxz/go2_ws/build/m20_config/CMakeFiles/install/strip.dir
