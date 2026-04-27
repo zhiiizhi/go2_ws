@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- M20 山猫 URDF - 轮子锁死版本（用于 champ 四足控制）-->
+<robot name="m20">
+    <!-- base_link 作为身体 -->
+    <link name="base_link">
+        <inertial>
+            <origin xyz="0.00355105878308153 0.0016507579200937 -0.00346462146571654" rpy="0 0 0"/>
+            <mass value="15.882"/>
+            <inertia ixx="0.0880787" ixy="0.001396" ixz="0.000111" iyy="0.533816" iyz="0.000519" izz="0.563915"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="file://$(find m20_description)/meshes/base_link.STL"/>
+            </geometry>
+            <material name="body_color">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.75 0.09 0.14"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0 0.045 0" rpy="0 1.57079632 0"/>
+            <geometry>
+                <cylinder length="0.75" radius="0.07"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0 -0.045 0" rpy="0 1.57079632 0"/>
+            <geometry>
+                <cylinder length="0.75" radius="0.07"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- IMU 链接（champ 需要） -->
+    <joint name="imu_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="imu_link"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <link name="imu_link">
+        <inertial>
+            <mass value="0.001"/>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- ============ 左前腿 ============ -->
+    <link name="lf_hip_link">
+        <inertial>
+            <origin xyz="-0.0111893129496933 0.00891693461032669 0.000405665689861192" rpy="0 0 0"/>
+            <mass value="0.261359958476582"/>
+            <inertia ixx="0.000186" ixy="0.000025" ixz="-0.000012" iyy="0.000371" iyz="-0.000008" izz="0.000288"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="file://$(find m20_description)/meshes/fl_hipx.STL"/>
+            </geometry>
+            <material name="hip_color">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0.055 0" rpy="1.57079632 0 0"/>
+            <geometry>
+                <cylinder length="0.14" radius="0.048"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="lf_hip_joint" type="revolute">
+        <origin xyz="0.3141 0.0685 0" rpy="0 0 0"/>
+        <parent link="base_link"/>
+        <child link="lf_hip_link"/>
+        <axis xyz="-1 0 0"/>
+        <limit lower="-0.611" upper="0.436" effort="76.4" velocity="22.4"/>
+    </joint>
+
+    <link name="lf_upper_leg_link">
+        <inertial>
+            <origin xyz="-0.00199374763010413 0.0984389609045802 -0.130663565833427" rpy="0 0 0"/>
+            <mass value="2.493"/>
+            <inertia ixx="0.038859" ixy="-0.000023" ixz="-0.000037" iyy="0.038040" iyz="-0.005985" izz="0.003848"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="file://$(find m20_description)/meshes/fl_hipy.STL"/>
+            </geometry>
+            <material name="upper_leg_color">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.01 0.11 -0.125" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.07 0.02 0.25"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0 0.11 -0.25" rpy="1.57079632 0 0"/>
+            <geometry>
+                <cylinder length="0.09" radius="0.05"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="lf_upper_leg_joint" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="lf_hip_link"/>
+        <child link="lf_upper_leg_link"/>
+        <axis xyz="0 -1 0"/>
+        <limit lower="-2.583" upper="2.286" effort="76.4" velocity="22.4"/>
+    </joint>
+
+    <link name="lf_lower_leg_link">
+        <inertial>
+            <origin xyz="0.00341916513259743 0.0026912421076368 -0.181265498605881" rpy="0 0 0"/>
+            <mass value="1.26"/>
+            <inertia ixx="0.012936" ixy="-0.000053" ixz="0.000226" iyy="0.013123" iyz="-0.001681" izz="0.001682"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="file://$(find m20_description)/meshes/fl_knee.STL"/>
+            </geometry>
+            <material name="lower_leg_color">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.015 -0.015 -0.125" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.06 0.025 0.25"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0 0.02 -0.25" rpy="1.57079632 0 0"/>
+            <geometry>
+                <cylinder length="0.1" radius="0.04"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="lf_lower_leg_joint" type="revolute">
+        <origin xyz="0 0.0984 -0.25" rpy="0 0 0"/>
+        <parent link="lf_upper_leg_link"/>
+        <child link="lf_lower_leg_link"/>
+        <axis xyz="0 -1 0"/>
+        <limit lower="-2.792" upper="2.809" effort="76.4" velocity="22.4"/>
+    </joint>
+
+    <!-- 左前轮（锁死，作为脚） -->
+    <link name="lf_foot_link">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.638"/>
+            <inertia ixx="0.001535" ixy="0.0" ixz="0.0" iyy="0.002853" iyz="0.0" izz="0.001535"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="file://$(find m20_description)/meshes/fl_wheel.STL"/>
+            </geometry>
+            <material name="wheel_color">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+            </material>
+        </visual>
+        <!-- 轮子圆柱碰撞体 -->
+        <collision>
+            <origin xyz="0 0 0" rpy="1.57079632 0 0"/>
+            <geometry>
+                <cylinder length="0.054" radius="0.09"/>
+            </geometry>
+        </collision>
+        <!-- 底部球形碰撞体（脚接触点） -->
+        <collision>
+            <origin xyz="0 0 -0.09" rpy="0 0 0"/>
+            <geometry>
+                <sphere radius="0.025"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="lf_foot_joint" type="fixed">
+        <origin xyz="0 0.059676 -0.25" rpy="0 0 0"/>
+        <parent link="lf_lower_leg_link"/>
+        <child link="lf_foot_link"/>
+    </joint>
+
+    <!-- ============ 右前腿 ============ -->
+    <link name="rf_hip_link">
+        <inertial>
+            <origin xyz="-0.0110900940309543 -0.0087503473771439 0.000521421017057358" rpy="0 0 0"/>
+            <mass value="0.261359958476582"/>
+            <inertia ixx="0.000186" ixy="-0.000026" ixz="-0.000012" iyy="0.000371" iyz="0.000008" izz="0.000288"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="file://$(find m20_description)/meshes/fr_hipx.STL"/>
+            </geometry>
+            <material name="hip_color">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 -0.055 0" rpy="1.57079632 0 0"/>
+            <geometry>
+                <cylinder length="0.14" radius="0.048"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="rf_hip_joint" type="revolute">
+        <origin xyz="0.3141 -0.0685 0" rpy="0 0 0"/>
+        <parent link="base_link"/>
+        <child link="rf_hip_link"/>
+        <axis xyz="-1 0 0"/>
+        <limit lower="-0.436" upper="0.611" effort="76.4" velocity="22.4"/>
+    </joint>
+
+    <link name="rf_upper_leg_link">
+        <inertial>
+            <origin xyz="-0.00229991904853988 -0.0989709441053532 -0.130925037640537" rpy="0 0 0"/>
+            <mass value="2.493"/>
+            <inertia ixx="0.039277" ixy="0.000005" ixz="-0.000063" iyy="0.038485" iyz="0.005970" izz="0.003921"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="file://$(find m20_description)/meshes/fr_hipy.STL"/>
+            </geometry>
+            <material name="upper_leg_color">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.01 -0.11 -0.125" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.07 0.02 0.25"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0 -0.11 -0.25" rpy="1.57079632 0 0"/>
+            <geometry>
+                <cylinder length="0.09" radius="0.05"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="rf_upper_leg_joint" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="rf_hip_link"/>
+        <child link="rf_upper_leg_link"/>
+        <axis xyz="0 -1 0"/>
+        <limit lower="-2.583" upper="2.286" effort="76.4" velocity="22.4"/>
+    </joint>
+
+    <link name="rf_lower_leg_link">
+        <inertial>
+            <origin xyz="0.0035494546955584 -0.002478843181213 -0.180089236444296" rpy="0 0 0"/>
+            <mass value="1.26"/>
+            <inertia ixx="0.012936" ixy="0.000053" ixz="0.000226" iyy="0.013123" iyz="0.001681" izz="0.001283"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="file://$(find m20_description)/meshes/fr_knee.STL"/>
+            </geometry>
+            <material name="lower_leg_color">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.015 0.015 -0.125" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.06 0.025 0.25"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0 -0.02 -0.25" rpy="1.57079632 0 0"/>
+            <geometry>
+                <cylinder length="0.1" radius="0.04"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="rf_lower_leg_joint" type="revolute">
+        <origin xyz="0 -0.0984 -0.25" rpy="0 0 0"/>
+        <parent link="rf_upper_leg_link"/>
+        <child link="rf_lower_leg_link"/>
+        <axis xyz="0 -1 0"/>
+        <limit lower="-2.792" upper="2.809" effort="76.4" velocity="22.4"/>
+    </joint>
+
+    <!-- 右前轮（锁死，作为脚） -->
+    <link name="rf_foot_link">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.638"/>
+            <inertia ixx="0.001535" ixy="0.0" ixz="0.0" iyy="0.002853" iyz="0.0" izz="0.001535"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="file://$(find m20_description)/meshes/fr_wheel.STL"/>
+            </geometry>
+            <material name="wheel_color">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+            </material>
+        </visual>
+        <!-- 轮子圆柱碰撞体 -->
+        <collision>
+            <origin xyz="0 0 0" rpy="1.57079632 0 0"/>
+            <geometry>
+                <cylinder length="0.054" radius="0.09"/>
+            </geometry>
+        </collision>
+        <!-- 底部球形碰撞体（脚接触点） -->
+        <collision>
+            <origin xyz="0 0 -0.09" rpy="0 0 0"/>
+            <geometry>
+                <sphere radius="0.025"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="rf_foot_joint" type="fixed">
+        <origin xyz="0 -0.059676 -0.25" rpy="0 0 0"/>
+        <parent link="rf_lower_leg_link"/>
+        <child link="rf_foot_link"/>
+    </joint>
+
+    <!-- ============ 左后腿 ============ -->
+    <link name="lh_hip_link">
+        <inertial>
+            <origin xyz="0.0110900940233134 0.00875014035040743 0.000524883746291591" rpy="0 0 0"/>
+            <mass value="0.261359958476582"/>
+            <inertia ixx="0.000186" ixy="-0.000025" ixz="0.000012" iyy="0.000371" iyz="-0.000008" izz="0.000288"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="file://$(find m20_description)/meshes/hl_hipx.STL"/>
+            </geometry>
+            <material name="hip_color">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0.055 0" rpy="1.57079632 0 0"/>
+            <geometry>
+                <cylinder length="0.14" radius="0.048"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="lh_hip_joint" type="revolute">
+        <origin xyz="-0.3141 0.0685 0" rpy="0 0 0"/>
+        <parent link="base_link"/>
+        <child link="lh_hip_link"/>
+        <axis xyz="-1 0 0"/>
+        <limit lower="-0.611" upper="0.436" effort="76.4" velocity="22.4"/>
+    </joint>
+
+    <link name="lh_upper_leg_link">
+        <inertial>
+            <origin xyz="0.00204343366218146 0.0990227473833045 -0.13069726691312" rpy="0 0 0"/>
+            <mass value="2.493"/>
+            <inertia ixx="0.039361" ixy="0.000029" ixz="0.000009" iyy="0.038554" iyz="-0.006001" izz="0.003914"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="file://$(find m20_description)/meshes/hl_hipy.STL"/>
+            </geometry>
+            <material name="upper_leg_color">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.01 0.11 -0.125" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.07 0.02 0.25"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0 0.11 -0.25" rpy="1.57079632 0 0"/>
+            <geometry>
+                <cylinder length="0.09" radius="0.05"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="lh_upper_leg_joint" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="lh_hip_link"/>
+        <child link="lh_upper_leg_link"/>
+        <axis xyz="0 -1 0"/>
+        <limit lower="-2.583" upper="2.286" effort="76.4" velocity="22.4"/>
+    </joint>
+
+    <link name="lh_lower_leg_link">
+        <inertial>
+            <origin xyz="-0.00354945209738589 0.00247884637205834 -0.180089257150601" rpy="0 0 0"/>
+            <mass value="1.26"/>
+            <inertia ixx="0.012936" ixy="0.000053" ixz="-0.000226" iyy="0.013123" iyz="-0.001681" izz="0.001283"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="file://$(find m20_description)/meshes/hl_knee.STL"/>
+            </geometry>
+            <material name="lower_leg_color">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.015 0.015 -0.125" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.06 0.025 0.25"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0 0.02 -0.25" rpy="1.57079632 0 0"/>
+            <geometry>
+                <cylinder length="0.1" radius="0.04"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="lh_lower_leg_joint" type="revolute">
+        <origin xyz="0 0.0984 -0.25" rpy="0 0 0"/>
+        <parent link="lh_upper_leg_link"/>
+        <child link="lh_lower_leg_link"/>
+        <axis xyz="0 -1 0"/>
+        <limit lower="-2.792" upper="2.809" effort="76.4" velocity="22.4"/>
+    </joint>
+
+    <!-- 左后轮（锁死，作为脚） -->
+    <link name="lh_foot_link">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.638"/>
+            <inertia ixx="0.001535" ixy="0.0" ixz="0.0" iyy="0.002853" iyz="0.0" izz="0.001535"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="file://$(find m20_description)/meshes/hl_wheel.STL"/>
+            </geometry>
+            <material name="wheel_color">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+            </material>
+        </visual>
+        <!-- 轮子圆柱碰撞体 -->
+        <collision>
+            <origin xyz="0 0 0" rpy="1.57079632 0 0"/>
+            <geometry>
+                <cylinder length="0.054" radius="0.09"/>
+            </geometry>
+        </collision>
+        <!-- 底部球形碰撞体（脚接触点） -->
+        <collision>
+            <origin xyz="0 0 -0.09" rpy="0 0 0"/>
+            <geometry>
+                <sphere radius="0.025"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="lh_foot_joint" type="fixed">
+        <origin xyz="0 0.059676 -0.25" rpy="0 0 0"/>
+        <parent link="lh_lower_leg_link"/>
+        <child link="lh_foot_link"/>
+    </joint>
+
+    <!-- ============ 右后腿 ============ -->
+    <link name="rh_hip_link">
+        <inertial>
+            <origin xyz="0.0110901558226165 -0.00875011717083631 0.000524936954718227" rpy="0 0 0"/>
+            <mass value="0.261359958476582"/>
+            <inertia ixx="0.000186" ixy="0.000025" ixz="0.000012" iyy="0.000371" iyz="0.000008" izz="0.000288"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="file://$(find m20_description)/meshes/hr_hipx.STL"/>
+            </geometry>
+            <material name="hip_color">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 -0.055 0" rpy="1.57079632 0 0"/>
+            <geometry>
+                <cylinder length="0.14" radius="0.048"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="rh_hip_joint" type="revolute">
+        <origin xyz="-0.3141 -0.0685 0" rpy="0 0 0"/>
+        <parent link="base_link"/>
+        <child link="rh_hip_link"/>
+        <axis xyz="-1 0 0"/>
+        <limit lower="-0.436" upper="0.611" effort="76.4" velocity="22.4"/>
+    </joint>
+
+    <link name="rh_upper_leg_link">
+        <inertial>
+            <origin xyz="0.00199199678434109 -0.0983704174694303 -0.13056065751366" rpy="0 0 0"/>
+            <mass value="2.493"/>
+            <inertia ixx="0.038878" ixy="-0.000022" ixz="0.000034" iyy="0.038053" iyz="0.005995" izz="0.003854"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="file://$(find m20_description)/meshes/hr_hipy.STL"/>
+            </geometry>
+            <material name="upper_leg_color">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.01 -0.11 -0.125" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.07 0.02 0.25"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0 -0.11 -0.25" rpy="1.57079632 0 0"/>
+            <geometry>
+                <cylinder length="0.09" radius="0.05"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="rh_upper_leg_joint" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="rh_hip_link"/>
+        <child link="rh_upper_leg_link"/>
+        <axis xyz="0 -1 0"/>
+        <limit lower="-2.583" upper="2.286" effort="76.4" velocity="22.4"/>
+    </joint>
+
+    <link name="rh_lower_leg_link">
+        <inertial>
+            <origin xyz="-0.00341053036115846 -0.0027020185369851 -0.181287492263963" rpy="0 0 0"/>
+            <mass value="1.26"/>
+            <inertia ixx="0.012936" ixy="-0.000053" ixz="-0.000226" iyy="0.013123" iyz="0.001681" izz="0.001283"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="file://$(find m20_description)/meshes/hr_knee.STL"/>
+            </geometry>
+            <material name="lower_leg_color">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.015 0.015 -0.125" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.06 0.025 0.25"/>
+            </geometry>
+        </collision>
+        <collision>
+            <origin xyz="0 -0.02 -0.25" rpy="1.57079632 0 0"/>
+            <geometry>
+                <cylinder length="0.1" radius="0.04"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="rh_lower_leg_joint" type="revolute">
+        <origin xyz="0 -0.0984 -0.25" rpy="0 0 0"/>
+        <parent link="rh_upper_leg_link"/>
+        <child link="rh_lower_leg_link"/>
+        <axis xyz="0 -1 0"/>
+        <limit lower="-2.792" upper="2.809" effort="76.4" velocity="22.4"/>
+    </joint>
+
+    <!-- 右后轮（锁死，作为脚） -->
+    <link name="rh_foot_link">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.638"/>
+            <inertia ixx="0.001535" ixy="0.0" ixz="0.0" iyy="0.002853" iyz="0.0" izz="0.001535"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="file://$(find m20_description)/meshes/hr_wheel.STL"/>
+            </geometry>
+            <material name="wheel_color">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/>
+            </material>
+        </visual>
+        <!-- 轮子圆柱碰撞体 -->
+        <collision>
+            <origin xyz="0 0 0" rpy="1.57079632 0 0"/>
+            <geometry>
+                <cylinder length="0.054" radius="0.09"/>
+            </geometry>
+        </collision>
+        <!-- 底部球形碰撞体（脚接触点） -->
+        <collision>
+            <origin xyz="0 0 -0.09" rpy="0 0 0"/>
+            <geometry>
+                <sphere radius="0.025"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="rh_foot_joint" type="fixed">
+        <origin xyz="0 -0.059676 -0.25" rpy="0 0 0"/>
+        <parent link="rh_lower_leg_link"/>
+        <child link="rh_foot_link"/>
+    </joint>
+
+    <!-- ============ Gazebo 物理属性 ============ -->
+    <!-- 身体 -->
+    <gazebo reference="base_link">
+        <mu1>0.2</mu1>
+        <mu2>0.2</mu2>
+        <kp>10000.0</kp>
+        <kd>1.0</kd>
+    </gazebo>
+
+    <!-- 左前腿 -->
+    <gazebo reference="lf_hip_link">
+        <mu1>0.2</mu1>
+        <mu2>0.2</mu2>
+    </gazebo>
+    <gazebo reference="lf_upper_leg_link">
+        <mu1>0.2</mu1>
+        <mu2>0.2</mu2>
+        <self_collide>1</self_collide>
+        <kp>10000.0</kp>
+        <kd>1.0</kd>
+    </gazebo>
+    <gazebo reference="lf_lower_leg_link">
+        <mu1>0.2</mu1>
+        <mu2>0.2</mu2>
+        <self_collide>1</self_collide>
+    </gazebo>
+    <gazebo reference="lf_foot_link">
+        <mu1>0.8</mu1>
+        <mu2>0.8</mu2>
+        <self_collide>1</self_collide>
+        <kp>500000.0</kp>
+        <kd>100.0</kd>
+    </gazebo>
+
+    <!-- 右前腿 -->
+    <gazebo reference="rf_hip_link">
+        <mu1>0.2</mu1>
+        <mu2>0.2</mu2>
+    </gazebo>
+    <gazebo reference="rf_upper_leg_link">
+        <mu1>0.2</mu1>
+        <mu2>0.2</mu2>
+        <self_collide>1</self_collide>
+        <kp>10000.0</kp>
+        <kd>1.0</kd>
+    </gazebo>
+    <gazebo reference="rf_lower_leg_link">
+        <mu1>0.2</mu1>
+        <mu2>0.2</mu2>
+        <self_collide>1</self_collide>
+    </gazebo>
+    <gazebo reference="rf_foot_link">
+        <mu1>0.8</mu1>
+        <mu2>0.8</mu2>
+        <self_collide>1</self_collide>
+        <kp>500000.0</kp>
+        <kd>100.0</kd>
+    </gazebo>
+
+    <!-- 左后腿 -->
+    <gazebo reference="lh_hip_link">
+        <mu1>0.2</mu1>
+        <mu2>0.2</mu2>
+    </gazebo>
+    <gazebo reference="lh_upper_leg_link">
+        <mu1>0.2</mu1>
+        <mu2>0.2</mu2>
+        <self_collide>1</self_collide>
+        <kp>10000.0</kp>
+        <kd>1.0</kd>
+    </gazebo>
+    <gazebo reference="lh_lower_leg_link">
+        <mu1>0.2</mu1>
+        <mu2>0.2</mu2>
+        <self_collide>1</self_collide>
+    </gazebo>
+    <gazebo reference="lh_foot_link">
+        <mu1>0.8</mu1>
+        <mu2>0.8</mu2>
+        <self_collide>1</self_collide>
+        <kp>500000.0</kp>
+        <kd>100.0</kd>
+    </gazebo>
+
+    <!-- 右后腿 -->
+    <gazebo reference="rh_hip_link">
+        <mu1>0.2</mu1>
+        <mu2>0.2</mu2>
+    </gazebo>
+    <gazebo reference="rh_upper_leg_link">
+        <mu1>0.2</mu1>
+        <mu2>0.2</mu2>
+        <self_collide>1</self_collide>
+        <kp>10000.0</kp>
+        <kd>1.0</kd>
+    </gazebo>
+    <gazebo reference="rh_lower_leg_link">
+        <mu1>0.2</mu1>
+        <mu2>0.2</mu2>
+        <self_collide>1</self_collide>
+    </gazebo>
+    <gazebo reference="rh_foot_link">
+        <mu1>0.8</mu1>
+        <mu2>0.8</mu2>
+        <self_collide>1</self_collide>
+        <kp>500000.0</kp>
+        <kd>100.0</kd>
+    </gazebo>
+
+    <!-- ============ Gazebo 插件配置 ============ -->
+    <gazebo>
+        <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+            <parameters>$(find m20_description)/config/ros_control/ros_control.yaml</parameters>
+        </plugin>
+    </gazebo>
+
+    <!-- IMU 插件 -->
+    <gazebo reference="imu_link">
+        <sensor name="imu_sensor" type="imu">
+            <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+                <ros>
+                    <remapping>~/out:=imu/data</remapping>
+                </ros>
+                <initial_orientation_as_reference>false</initial_orientation_as_reference>
+            </plugin>
+            <always_on>true</always_on>
+            <update_rate>100</update_rate>
+            <visualize>true</visualize>
+            <imu>
+                <angular_velocity>
+                    <x>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>2e-4</stddev>
+                            <bias_mean>0.0000075</bias_mean>
+                            <bias_stddev>0.0000008</bias_stddev>
+                        </noise>
+                    </x>
+                    <y>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>2e-4</stddev>
+                            <bias_mean>0.0000075</bias_mean>
+                            <bias_stddev>0.0000008</bias_stddev>
+                        </noise>
+                    </y>
+                    <z>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>2e-4</stddev>
+                            <bias_mean>0.0000075</bias_mean>
+                            <bias_stddev>0.0000008</bias_stddev>
+                        </noise>
+                    </z>
+                </angular_velocity>
+                <linear_acceleration>
+                    <x>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>1.7e-2</stddev>
+                            <bias_mean>0.1</bias_mean>
+                            <bias_stddev>0.001</bias_stddev>
+                        </noise>
+                    </x>
+                    <y>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>1.7e-2</stddev>
+                            <bias_mean>0.1</bias_mean>
+                            <bias_stddev>0.001</bias_stddev>
+                        </noise>
+                    </y>
+                    <z>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>1.7e-2</stddev>
+                            <bias_mean>0.1</bias_mean>
+                            <bias_stddev>0.001</bias_stddev>
+                        </noise>
+                    </z>
+                </linear_acceleration>
+            </imu>
+        </sensor>
+    </gazebo>
+
+    <!-- 身体材质 -->
+    <gazebo reference="base_link">
+        <material>Gazebo/Gray</material>
+    </gazebo>
+
+    <!-- ============ ros2_control 配置 ============ -->
+    <ros2_control name="lf" type="system">
+        <hardware>
+            <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+        </hardware>
+        <joint name="lf_hip_joint">
+            <command_interface name="effort"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="lf_upper_leg_joint">
+            <command_interface name="effort"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="lf_lower_leg_joint">
+            <command_interface name="effort"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+    </ros2_control>
+
+    <ros2_control name="rf" type="system">
+        <hardware>
+            <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+        </hardware>
+        <joint name="rf_hip_joint">
+            <command_interface name="effort"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="rf_upper_leg_joint">
+            <command_interface name="effort"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="rf_lower_leg_joint">
+            <command_interface name="effort"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+    </ros2_control>
+
+    <ros2_control name="lh" type="system">
+        <hardware>
+            <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+        </hardware>
+        <joint name="lh_hip_joint">
+            <command_interface name="effort"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="lh_upper_leg_joint">
+            <command_interface name="effort"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="lh_lower_leg_joint">
+            <command_interface name="effort"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+    </ros2_control>
+
+    <ros2_control name="rh" type="system">
+        <hardware>
+            <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+        </hardware>
+        <joint name="rh_hip_joint">
+            <command_interface name="effort"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="rh_upper_leg_joint">
+            <command_interface name="effort"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="rh_lower_leg_joint">
+            <command_interface name="effort"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+    </ros2_control>
+
+</robot>
